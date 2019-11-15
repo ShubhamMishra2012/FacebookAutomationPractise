@@ -1,0 +1,7 @@
+com\testcases\BaseClass.class
+com\testcases\TC_Login_001.class
+com\pageobjects\LoginPage.class
+com\pageobjects\LogoutPage.class
+com\testcases\TC_Logout_002.class
+com\utilities\readConfig.class
+com\utilities\reporting.class
