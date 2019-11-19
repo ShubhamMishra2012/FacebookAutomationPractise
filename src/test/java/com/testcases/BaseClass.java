@@ -52,13 +52,13 @@ public class BaseClass {
 	
 	}
 
-	@AfterClass
+/*	@AfterClass
 	public void teardown()
 	
 	{
 		driver.quit();
 			}
-	
+	*/
 	
 	 public static void takeSnapShot(WebDriver webdriver,String tname) throws Exception{
 

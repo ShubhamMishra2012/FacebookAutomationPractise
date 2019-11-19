@@ -20,20 +20,30 @@ public class TC_Logout_002 extends BaseClass{
 		driver.manage().window().maximize();
 	
 	
-	LogoutPage lp = new LogoutPage(driver);
+	LogoutPage logt = new LogoutPage(driver);
 	
-	lp.setusername(EmailOrPhone);
+	logt.setusername(EmailOrPhone);
 	logger.info("Entered username");
-	lp.setpass(Password);
+	logt.setpass(Password);
 	logger.info("Entered password");
-	lp.setsubmit();
+	logt.setsubmit();
 	logger.info("Submit clicked");
+	
+	//taking snapshot anywhere
+	try {
+		takeSnapShot(driver,"beforelogoutTest");
+	} catch (Exception e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	}
 	driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS) ;
-	lp.Logout();
+	logt.Logout();
 	logger.info("logout dropdown clicked");
     driver.manage().timeouts().implicitlyWait(7,TimeUnit.SECONDS) ;
-	lp.Logout1();
+    logt.Logout1();
 	logger.info("logout clicked");
+	
+	
 	
 	
 	}

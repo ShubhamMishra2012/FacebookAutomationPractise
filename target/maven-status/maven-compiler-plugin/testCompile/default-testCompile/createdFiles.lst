@@ -4,4 +4,6 @@ com\pageobjects\LoginPage.class
 com\pageobjects\LogoutPage.class
 com\testcases\TC_Logout_002.class
 com\utilities\readConfig.class
+com\pageobjects\likepost.class
+com\testcases\TC_scolldownopenpost.class
 com\utilities\reporting.class
