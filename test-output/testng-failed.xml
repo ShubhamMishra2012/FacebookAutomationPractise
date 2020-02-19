@@ -1,14 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Default suite]">
-  <test name="Default test(failed)" preserve-order="true">
+<suite verbose="10" name="Failed suite [PractiseProject]" allow-return-values="true">
+  <test name="Test">
     <classes>
+      <class name="com.testcases.TC_Logout_002"/>
+      <class name="com.testcases.TC_scolldownopenpost"/>
+      <class name="com.testcases.TC_Login_001"/>
+    </classes>
+  </test> <!-- Test -->
+  <test name="Test(failed)">
+    <classes>
+      <class name="com.testcases.TC_Logout_002">
+        <methods>
+          <include name="setup"/>
+          <include name="logouttest"/>
+        </methods>
+      </class> <!-- com.testcases.TC_Logout_002 -->
+      <class name="com.testcases.TC_Login_001">
+        <methods>
+          <include name="logintest"/>
+        </methods>
+      </class> <!-- com.testcases.TC_Login_001 -->
       <class name="com.testcases.TC_scolldownopenpost">
         <methods>
           <include name="openprofilepicandtakescreenshot"/>
+          <include name="likepost"/>
           <include name="setup"/>
         </methods>
       </class> <!-- com.testcases.TC_scolldownopenpost -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [PractiseProject] -->

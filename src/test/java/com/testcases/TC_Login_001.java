@@ -26,8 +26,11 @@ public class TC_Login_001 extends BaseClass {
 	
 	lp.setusername(EmailOrPhone);
 	logger.info("Entered username");
+	
+	
 	lp.setpass(Password);
 	logger.info("Entered password");
+
 	lp.setsubmit();
 	
 	

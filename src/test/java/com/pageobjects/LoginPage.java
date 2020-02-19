@@ -11,16 +11,16 @@ import org.openqa.selenium.support.ui.Select;
 public class LoginPage {
 
 	
-	WebDriver ldriver;
+	WebDriver driver;
 	
 	public LoginPage(WebDriver rdriver){
-		 ldriver = rdriver;
+		 driver = rdriver;
 		 PageFactory.initElements(rdriver, this);
 		
 		
 	}
 	@FindBy(name="email")
-	@CacheLookup
+	@CacheLookup  
 	WebElement EmailOrPhone;
 	
 	@FindBy(name="pass")

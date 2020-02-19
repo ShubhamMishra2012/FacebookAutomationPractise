@@ -1,9 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Suite">
-  <test thread-count="5" name="Test">
+
+<suite name="PractiseProject" allow-return-values="true"
+    verbose="10">
+
+ <listners>
+  <listner  class ="com.utilities.reporting" />
+  </listners>
+  <test name="Test">
+  
     <classes>
       <class name="com.testcases.TC_Logout_002"/>
+      <class name="com.testcases.TC_scolldownopenpost"/>
       <class name="com.testcases.TC_Login_001"/>
     </classes>
   </test> <!-- Test -->
